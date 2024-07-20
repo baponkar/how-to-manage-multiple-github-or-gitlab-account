@@ -15,7 +15,7 @@ We can communicate GitHub and GitLab Repository from our local machine by HTTPS 
 
 I am going to assume you have two user ID ```username1``` and ```username2``` which are registered with EmailID ```username1@example.com``` and ```username1@example.com``` in GitHub respectively.  
 
-## <u>Step -1 : Creating an SSH key for ```username1```:</u>
+## Step -1 : Creating an SSH key for ```username1```:
 
 ```(bash)
     ssh-keygen -t rsa -b 4096 -C "username1@example.com"
@@ -26,14 +26,14 @@ I am going to assume you have two user ID ```username1``` and ```username2``` wh
 
  To see the created file in .ssh folder if you have choose to store in there  ```ls -a ~/.ssh/``` .
 
-## <u> Step - 2: Start the SSH and adding the generated Key:</u>
+##  Step - 2: Start the SSH and adding the generated Key:
 
 ```(bash)
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ```
 
-## <u> Step - 3: Adding SSH Key in GitHub:</u>
+##  Step - 3: Adding SSH Key in GitHub:
 - LogIn into the GitHub Account with ```username1@example.com``` with password.
 
 - Navigate to Settings > SSH Keys.
@@ -42,7 +42,7 @@ ssh-add ~/.ssh/id_rsa
 
 - Ensure your key is listed. If not, paste the copied key and add it.
 
-## <u>Step 4 : Verify the SSH Connection:</u>
+## Step 4 : Verify the SSH Connection:
 
 ```(bash)
     ssh -T git@github.com
@@ -105,19 +105,19 @@ git remote set-url origin git@github.com:username/repository.git
 
 Follow similar steps as above to set up SSH keys for GitLab accounts. The documentation for GitLab SSH keys can be found [here](https://docs.gitlab.com/ee/user/ssh.html).
 
-## <u>Step 1: Creating an SSH key for username1</u>
+## Step 1: Creating an SSH key for username1
 ```
 ssh-keygen -t rsa -b 4096 -C "username1@example.com"
 ```
 
-## <u>Step 2: Start the SSH agent and add the generated key</u>
+## Step 2: Start the SSH agent and add the generated key
 
 ```
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ```
 
-## <u>Step 3: Adding the SSH Key to GitLab</u>
+## Step 3: Adding the SSH Key to GitLab
 
 - Log in to your GitLab account with username1@example.com and your password.
 
@@ -127,7 +127,7 @@ ssh-add ~/.ssh/id_rsa
 - Paste the contents of your id_rsa.pub file into the "Key" field and save.
 
 
-## <u>Step 4: Verify the SSH Connection </u>
+## Step 4: Verify the SSH Connection 
 ```
 ssh -T git@gitlab.com
 ```
