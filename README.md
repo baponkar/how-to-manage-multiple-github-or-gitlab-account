@@ -13,7 +13,7 @@ We can communicate GitHub and GitLab Repository from our local machine by HTTPS 
 
 * It is always good practice to see the official documentation [GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) [GitLab](https://docs.gitlab.com/ee/user/ssh.html).
 
-I am going to assume you have two user ID ```username1``` and ```username2``` which are registered with EmailID ```username1@example.com``` and ```username1@example.com``` in GitHub respectively.  
+I am going to assume you have two user ID ```username1``` and ```username2``` which are registered with EmailID ```username1@example.com``` and ```username2@example.com``` in GitHub respectively.  
 
 ## Step -1 : Creating an SSH key for ```username1```:
 
@@ -30,7 +30,7 @@ I am going to assume you have two user ID ```username1``` and ```username2``` wh
 
 ```(bash)
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa_username1
 ```
 
 ##  Step - 3: Adding SSH Key in GitHub:
@@ -38,7 +38,7 @@ ssh-add ~/.ssh/id_rsa
 
 - Navigate to Settings > SSH Keys.
 
-<img src="./images/set_ssh_in_github.png" alt="Add SSH in GitHub" width="300px" height="150px">
+<img src="./images/set_ssh_in_github.png" alt="Add SSH in GitHub" width="500px" height="250px">
 
 - Ensure your key is listed. If not, paste the copied key and add it.
 
@@ -49,25 +49,26 @@ ssh-add ~/.ssh/id_rsa
 ```
 
 If everything is going perfect then you will see 
-```Hi username1! You've successfully authenticated, but GitHub does not provide shell access.```
+
+`Hi username1! You've successfully authenticated, but GitHub does not provide shell access.`
 
 
 Now you are ready to communicate GitHub via SSH for ```usernam1``` account.
 
-* To activate SSH for  ```username2``` you need to perform all above four steps.
+* To activate SSH for  ```username2``` you need to perform all above four steps for `username2`.
 
-* Now create a config file by ```~/.ssh/config``` inside of ~/.ssh/ directory location.
+* Now create a config file by ```~/.ssh/config``` inside of `~/.ssh/` directory location.
 
 The content of config file :
 ```(bash)
 # GitHub Username1 Account
-Host github.com
+Host github-username1
     HostName github.com
     User git
     IdentityFile ~/.ssh/id_rsa_username1
 
 # GitHub Username2 Account
-Host github-work
+Host github-username2
     HostName github.com
     User git
     IdentityFile ~/.ssh/id_rsa_username2
@@ -143,12 +144,12 @@ Create a config file at ~/.ssh/config with the following content:
 ```
 # GitLab Username1 Account
 Host gitlab.com
-    HostName gitlab.com
+    HostName gitlab-username1
     User git
     IdentityFile ~/.ssh/id_rsa_username1
 
 # GitLab Username2 Account
-Host gitlab-work
+Host gitlab-username2
     HostName gitlab.com
     User git
     IdentityFile ~/.ssh/id_rsa_username2
@@ -183,4 +184,4 @@ To change the HTTPS remote URL to the SSH remote URL:
 git remote set-url origin git@gitlab.com:username/repository.git
 ```
 
-<span style="color:grey"> © 2024 baponkar  All rights reserved. </span>
+<span style="color:grey; "> © 2024 baponkar  All rights reserved. </span>
