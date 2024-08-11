@@ -124,7 +124,7 @@ ssh-add ~/.ssh/id_rsa
 
 - Navigate to User Settings > SSH Keys.
 
-<img src="./images/add_ssh_in_gitlab.png" width="300" height="150" alt="Add SSH key in GitLab">
+<img src="./images/add_ssh_in_gitlab.png" max-width="1080" height="auto" alt="Add SSH key in GitLab">
 - Paste the contents of your id_rsa.pub file into the "Key" field and save.
 
 
