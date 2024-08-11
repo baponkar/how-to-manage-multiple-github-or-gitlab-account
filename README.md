@@ -38,7 +38,7 @@ ssh-add ~/.ssh/id_rsa_username1
 
 - Navigate to Settings > SSH Keys.
 
-<img src="./images/set_ssh_in_github.png" alt="Add SSH in GitHub" width="500px" height="250px">
+<img src="./images/set_ssh_in_github.png" alt="Add SSH in GitHub" max-width="1080px" height="auto">
 
 - Ensure your key is listed. If not, paste the copied key and add it.
 
