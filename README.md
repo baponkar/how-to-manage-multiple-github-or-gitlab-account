@@ -1,3 +1,4 @@
+<head>
   <!-- primary meta tags-->
   <title>Manage Multiple GitHub/GitLab Account</title>
   <meta name="title" content="Manage Multiple GitHub/GitLab Account">
@@ -5,19 +6,6 @@
 
   <!--favicon-->
   <link rel="shortcut icon" href="./image/favicon.png" type="image/png">
-
-  <!--google font link-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-
-  <!--material icon font-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,-25" />
-  <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:repeat_one_on:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=repeat&icon.size=24&icon.color=%23e8eaed&icon.platform=web"/>
-
-  <!--custom css link-->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
 </head>
 
 
