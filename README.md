@@ -1,3 +1,25 @@
+  <!-- primary meta tags-->
+  <title>Manage Multiple GitHub/GitLab Account</title>
+  <meta name="title" content="Manage Multiple GitHub/GitLab Account">
+  <meta name="description" content="In this article I have shown how to manage multiple GitHub or GitLab Account by SSH Key.">
+
+  <!--favicon-->
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/png">
+
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!--material icon font-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,-25" />
+  <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:repeat_one_on:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=repeat&icon.size=24&icon.color=%23e8eaed&icon.platform=web"/>
+
+  <!--custom css link-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
 
 [![Static Badge](https://img.shields.io/badge/--maker?logo=git&labelColor=white&color=white)](https://git-scm.com/)
 [![Static Badge](https://img.shields.io/badge/--maker?logo=github&logoColor=black&labelColor=white&color=white)](https://github.com)
