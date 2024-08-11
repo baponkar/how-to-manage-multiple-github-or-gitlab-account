@@ -4,6 +4,7 @@
 [![Static Badge](https://img.shields.io/badge/--maker?logo=gitlab&labelColor=white&color=white)](https://gitlab.com)
 
 # How to manage multiple GitHub or GitLab accounts
+#### Published on July 20, 2024
 
 We can communicate GitHub and GitLab Repository from our local machine by HTTPS and SSH. 
  Suppose you have multiple [GitHub](https://github.com) or [GitLab](https://gitlab.com) accounts and need all accounts to push and pull projects. Then it is boring to type username and password in every time. The best option is to add an SSH Key for each account then you don't need to type a username and password for every single push and pull. I am going to show the process of how to create and add an SSH key in this article.
