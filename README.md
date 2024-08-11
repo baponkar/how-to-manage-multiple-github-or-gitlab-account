@@ -5,7 +5,7 @@
   <meta name="description" content="In this article I have shown how to manage multiple GitHub or GitLab Account by SSH Key.">
 
   <!--favicon-->
-  <link rel="shortcut icon" href="./image/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
 </head>
 
 
